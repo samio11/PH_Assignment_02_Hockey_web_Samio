@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Hockey Website</title>
 </head>
 
-<body class="max-w-screen-xl mx-auto">
+<body class="max-w-screen-xl mx-auto space-y-4">
     <!-- NavBar -->
     <div class="navbar bg-base-100">
         <div class="navbar-start">
@@ -45,6 +47,48 @@
         <div class="navbar-end flex justify-center items-center gap-3">
             <i class="fa-solid fa-magnifying-glass hidden lg:block"></i>
             <a class="btn btn-error text-white">Get Ticket</a>
+        </div>
+    </div>
+    <!-- Slider Section -->
+    <div class="relative">
+        <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+                <img src="./Images/1.png" class="w-full h-[250px] lg:h-[450px] rounded-lg" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+                <img src="https://t3.ftcdn.net/jpg/04/94/65/34/360_F_494653408_L5XoC3iFVyKkVz5K7e9kbmKrv0iDMaNt.jpg"
+                    class="w-full h-[250px] lg:h-[450px] rounded-lg" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+                <img src="https://t3.ftcdn.net/jpg/05/62/20/00/360_F_562200080_Nz0xMpxwygukWXJ3t1bdTEjDRx7e3uMe.jpg"
+                    class="w-full h-[250px] lg:h-[450px] rounded-lg" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide4" class="carousel-item relative w-full">
+                <img src="https://i.cbc.ca/1.7134655.1709675001!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_780/kids-hitting-the-ice-in-at-former-iceplex.jpg"
+                    class="w-full h-[250px] lg:h-[450px] rounded-lg" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="bg-black static lg:absolute text-white p-5 bottom-6 right-20 w-full lg:w-[400px] rounded-xl">
+               <h2 class="text-xl font-bold">Meet All The Hero</h2>
+               <p class="text-sm">Welcome to the heart of our hockey tournament, where extraordinary talent and indomitable spirit come together. In this section,  we celebrate the incredible athletes who have dedicated themselves to the game, showcasing  their skills, resilience, and passion on the ice. Each player is a hero in their own right, bringing unique strengths and stories to the rink.</p>
+            </div>
         </div>
     </div>
 </body>
